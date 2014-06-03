@@ -1,0 +1,7 @@
+*.class
+Expr*.tokens
+Expr*.java
+
+# In case you have Eclipse running...
+.project
+.classpath
