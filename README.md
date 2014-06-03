@@ -5,14 +5,10 @@ This is based on two sources. One is the tiny demo at
 http://www.antlr.org/ in the tabbed box on the right side of the home page.
 The other is first answer to http://stackoverflow.com/questions/1931307.
 
-While this answer is wonderfully detailed, I found I needed to tinker a bit
-to get it to work, probably because Antlr has evolved a bit since that
-answer was posted. It turns out
-
-```java
-		System.out.println(parser.eval());
-```
-
+While the StackOverflow answer is wonderfully detailed, I found I needed to
+tinker a bit to get it to work, because Antlr has evolved a bit since that
+answer was posted. I needed to replace `ANTLRStringStream` with
+`ANTLRInputStream`, and I learned that `System.out.println(parser.eval());`
 no longer works because `parser.eval` now returns an instance of
 `ExprParser.EvalContext`, whose `value` is the final answer to the
 arithmetic problem.
