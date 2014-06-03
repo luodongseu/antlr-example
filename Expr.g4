@@ -26,9 +26,3 @@ atomExp returns [double value]
 Number
     :    ('0'..'9')+ ('.' ('0'..'9')+)?
     ;
-
-/*
-WS  
-    :   (' ' | '\t' | '\r'| '\n') {$channel=HIDDEN;}
-    ;
-*/
