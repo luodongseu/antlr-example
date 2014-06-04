@@ -1,6 +1,10 @@
 *.class
 Expr*.tokens
 Expr*.java
+build/
+
+# stupid osx garbage
+.DS_Store
 
 # In case you have Eclipse running...
 .project
